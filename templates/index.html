@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .content {
+        background-image: url('static/images/wp7447287-cv-wallpapers.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 50px; /* Adjust padding as needed */
+        height: 100vh; /* Set height to cover the entire viewport height */
+        width: 100vw; /* Set width to cover the entire viewport width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif; /* Choose a suitable font family */
+        font-size: 2.5rem; /* Increase font size */
+        font-weight: bold; /* Make the text bold */
+        color: #333; /* Darken the text color */
+        margin-bottom: 20px; /* Add some space below the text */
+    }
+
+    .form {
+        width: 80%; /* Adjust width as needed */
+        max-width: 600px; /* Set maximum width */
+        background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Make the text input full width */
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Make the search button full width */
+        padding: 10px;
+        background-color: #007bff; /* Change background color */
+        color: #fff; /* Change text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Change hover background color */
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Parse Resume</h1>
+
+    <div class="form">
+        <form action="/review" method="POST">
+            <textarea name="content" id="content" placeholder="Enter your resume..." rows="10"></textarea> <!-- Using textarea instead of input -->
+            <input type="submit" value="Send Your Resume">
+        </form>
+    </div>
+</div>
+{% endblock %}

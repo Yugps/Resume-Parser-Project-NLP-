@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parsed Resume</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Parsed Resume</h1>
+  <div class="content">
+    <table class="table-users">
+      <thead>
+        <tr>
+          <th>Entity</th>
+          <th>BERT Token</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for word in parsed_resume %}
+        <tr>
+          <td>{{ word.entity }}</td>
+          <td>{{ word.word }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
