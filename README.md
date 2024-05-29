@@ -7,4 +7,6 @@ Features
 * User Friendly web application for code free execution of parsing 
 * Takes in resume in plain text format 
 * App.py could be easily used on virtual environments like google colab as it uses ngrok integration
-* Simply clone the repository and run app.py after installing necessary requirements 
+* Simply clone the repository and run app.py after installing necessary requirements
+* Model being larger than recommended size by the github could not be uploaded here
+* You can download the model from here and make sure to extract it in the cloned repository https://drive.google.com/file/d/1xwWUFBlMW18mPb3Qzt_204xCwDzSA3W5/view?usp=sharing
