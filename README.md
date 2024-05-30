@@ -10,7 +10,7 @@
  8. Email addresses
  9. Phone numbers.
 
-Features
+## Features
 * NER Model: Utilizes BERT-based NER  pretrained model from hugging face  finetuned for accurate entity extraction.
 * Data Preprocessing: Includes data cleaning and normalization steps to improve model performance.
 * User Friendly web application for code free execution of parsing 
