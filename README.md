@@ -1,5 +1,14 @@
 # Resume Parser with BERT NER
-### A Python-based resume parser that leverages BERT-based Named Entity Recognition (NER) to extract relevant information from resumes. The model identifies entities such as names, colleges, degrees, work experience, skills, locations, email addresses, and phone numbers.
+ A Python-based resume parser that leverages BERT-based Named Entity Recognition (NER) to extract relevant information from resumes. The model identifies entities such as 
+ 1. Names
+ 2. Colleges
+ 3. Degrees
+ 4. Work
+ 5. Experience
+ 6. Skills
+ 7. Locations
+ 8. Email addresses
+ 9. Phone numbers.
 
 Features
 * NER Model: Utilizes BERT-based NER  pretrained model from hugging face  finetuned for accurate entity extraction.
