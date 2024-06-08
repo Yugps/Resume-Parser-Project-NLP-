@@ -11,6 +11,19 @@ A Python-based resume parser that leverages BERT-based Named Entity Recognition 
 - **Email addresses**
 - **Phone numbers**
 
+  ##  Web app in action
+  **Home page Example1**
+  ![Alt text](https://github.com/Yugps/Resume-Parser-Project-NLP-/blob/main/In%20App%20Images/Resume%20parser%20welcome%20page%201.png)
+
+  **Result page Example1**
+  ![Alt text](https://github.com/Yugps/Resume-Parser-Project-NLP-/blob/main/In%20App%20Images/Resume%20parser%20result%20page%201.png)
+  
+  **Home page Example2**
+  ![Alt text](https://github.com/Yugps/Resume-Parser-Project-NLP-/blob/main/In%20App%20Images/Resume%20parser%20welcome%20page%202.png)
+
+  **Result page Example2**
+  ![Alt text](https://github.com/Yugps/Resume-Parser-Project-NLP-/blob/main/In%20App%20Images/Resume%20parser%20result%20page%202.png)
+
 ## Features
 
 - **NER Model:**
